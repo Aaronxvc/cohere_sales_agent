@@ -1,0 +1,19 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Environment variables
+.env
+
+# Local debug scripts (should not be committed)
+debug_models.py
+test_supported_models.py
+
+# Misc development files
+file_tree.txt
+pyvenv.cfg
