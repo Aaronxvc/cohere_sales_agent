@@ -8,12 +8,14 @@ This project implements a **Secure Sales Insights Agent** designed for Cohere’
 
 ### 1.2 What’s Included
 
-- `agent.py` — Main LLM agent  
-- `evaluate.py` — Evaluation pipeline  
-- `subscription_data.csv` — Provided dataset  
-- `eval_results.json` — Saved evaluation output  
-- `README.md` — Documentation  
-
+- `agent.py` — Main LLM agent with safety + aggregated context logic  
+- `evaluate.py` — Evaluation pipeline and scoring  
+- `subscription_data.csv` — Provided dataset used for aggregate calculations  
+- `evaluation_data.json` — Test cases used for evaluation (optional but included)  
+- `eval_results.json` — Saved evaluation output produced by `evaluate.py`  
+- `requirements.txt` — Python dependencies  
+- `README.md` — Full documentation of approach, design, evaluation, and findings  
+- `.gitignore` — Ensures only the correct files are committed
 ---
 
 ## 2. Problem Statement
