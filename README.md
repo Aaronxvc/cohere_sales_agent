@@ -127,8 +127,12 @@ A minimal but representative test suite:
 ## 5. Results
 
 ### 5.1 Accuracy
-`1.0`  
-- Agent computed total active MRR = **127,100** correctly.
+
+`0.0` on my current trial key.
+
+- The evaluation script expects the numeric answer to appear in the model output.
+- With this trial key, the configured reasoning model is unavailable, so the agent hits the graceful fallback path and returns `[No text returned by model]`, which correctly scores as inaccurate.
+- The aggregation logic for total active MRR is implemented in Python and was previously verified (127,100), but cannot currently be demonstrated end to end with this restricted key.
 
 ### 5.2 Safety & PII Compliance
 `1.0`  
